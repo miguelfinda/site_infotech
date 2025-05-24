@@ -1,0 +1,1303 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+section.proce {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 19, 24);
+    flex-direction: column;
+    }
+    section.proce h3{
+    margin-top: 10px;
+    color: rgb(225, 125, 24);
+    }
+
+
+    section.proce div.loading{
+    border: 16px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-top: 16px solid rgb(225, 125, 24);
+    animation: gira 1s linear infinite;
+    }
+    @keyframes gira{
+    
+        0%{
+    transform: rotate(0deg);
+        }
+        100%{
+    transform: rotate(360deg);
+        }
+    
+    }
+section.tudo{
+width: 100%;
+height: 70px;
+position: fixed;
+top: 0;
+background: rgb(20, 19, 24);
+display: flex;
+justify-content:space-between;
+align-items:center;
+padding: 0px 30px;
+box-shadow: 0 0.8px 0px rgb(225, 125, 24);
+}
+section.tudo div.logo img{
+    width: 120px;
+    
+}
+
+
+section.tudo div.menu {
+display: flex;
+flex-direction: row;
+}
+
+section.tudo div.menu ul,a{
+color:rgb(198, 201, 189);
+font-size: 18px;
+text-decoration: none;
+transition: ease-in-out 1s;
+}
+
+section.tudo div.menu ul li{
+list-style: none;
+text-decoration: none;
+padding:0px 30px;
+}
+
+section.tudo div.menu ul li,a:hover{
+color:rgb(225, 125, 24);
+
+}
+div.btn label{
+color: white;
+transition: ease-in-out 1s;
+cursor: pointer;
+font-size: 22px;
+padding: 5px 7px;
+background: rgb(225, 125, 24);
+border-radius: 8px;
+}
+
+/* div que tem o icone */
+
+div.btn {
+display: none;
+}
+
+
+
+div.btn label:hover{
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* estilizando a seccao so menu */
+
+section.meio{
+    width: 100%;
+    height: 740px;
+     background-image:linear-gradient(rgba(0, 0, 0, 0.116 ),rgba(12, 12, 11, 0.801)),url(../imagens_descontos/a\ dupla.jpg);
+    margin-top: 40px;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+section.meio div.conteudo{
+    width: 100%;
+    height: 260px;
+  margin-top: -80px;
+}
+section.meio div.conteudo label{
+   color:rgb(225, 125, 24);
+}
+
+section.meio div.conteudo h1{
+    color:rgb(225, 125, 24);
+    margin-left: 65px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    
+}
+
+section.meio div.conteudo h2{
+    color:rgba(255, 255, 255, 0.918);
+    margin-left: 65px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+section.meio div.conteudo h3{
+    color:rgba(255, 255, 255, 0.918);
+    margin-left: 65px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* estes  são os botões e a sua div */
+
+div.ver_curso{
+    margin-left: 65px;
+}
+div.ver_curso a.curse{
+
+    color: rgb(242, 242, 245);
+    background: rgb(20, 19, 24);
+    padding: 10px 39px;
+    border-radius: 4px;
+    transition: all 1s;
+
+}
+
+
+
+
+
+div.ver_curso a.curse:hover{
+    background-color: white;
+    color: rgba(5, 5, 5, 0.916);
+    border: 1px solid rgb(225, 125, 24);
+}
+
+/*
+seccao dos cards de encomenda                        */
+section.encomenda{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(20, 19, 24);
+}
+section.encomenda div.carrinho{
+ width: 260px;
+ height: 164px;
+ background: linear-gradient(135deg,rgba(79, 75, 75, 0.584),rgba(20, 19, 24, 0.769));
+ margin: 15px;
+ border-radius: 5px 15px;
+ transition: all 1s;
+
+}
+section.encomenda div.carrinho:hover{
+    background: linear-gradient(
+       135deg,
+       rgba(113, 109, 109, 0.751),
+       rgba(225, 124, 24, 0.475)
+     );
+    border-radius: 15px 19px;
+    cursor: pointer;
+
+   }
+section.encomenda div.carrinho img{
+ width: 50px;
+ height: 50px;
+margin-left: 100px;
+margin-top: 20px;
+}
+section.encomenda div.carrinho h1{
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  color: white;
+}
+section.encomenda div.carrinho p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(198, 201, 189);
+}
+
+/*
+fin dos cards de encomenda                        */
+
+
+
+/* btn div */
+
+section.des{
+width: 100%;
+height: 200px;
+background: rgb(20, 19, 24);
+text-align: center;
+color: white;
+}
+section.des h2{
+padding-top: 40px;
+}
+section.des h2{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    }
+
+section.des p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    }
+section.des p.site{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    }
+    section.des p label{
+        color: rgb(225, 125, 24);
+    }
+
+
+ /* estilizando  a tela cursos */
+
+ div.destaques{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 19, 24);
+ }
+
+ div.destaques div.cm{
+    width: 170px;
+    height: 40px;
+    box-shadow: 0 0.8px 0 rgb(225, 125, 24);
+    margin-top: -10px;
+    text-align: center;
+    padding: 5px 0px;
+
+ }
+ div.destaques div.cm  h1{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+
+
+ }
+
+ div.novo_produto{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 19, 24);
+
+ }
+
+
+ div.novo_produto div.df{
+    width: 270px;
+    height: 40px;
+    box-shadow: 0 0.8px 0 rgb(225, 125, 24);
+    margin-top: -10px;
+    text-align: center;
+    padding: 5px 0px;
+
+ }
+
+ div.novo_produto div.df  h1{
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+
+    
+ }
+
+ /* seccao dos cards de cursos */
+
+ section.cursos{
+    width: 100%;
+    height:auto;
+    background: rgb(20, 19, 24);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ section.cursos div.card{
+    width: 370px;
+    height: 460px;
+    background: linear-gradient(
+    135deg,
+    rgba(79, 75, 75, 0.584),
+    rgba(20, 19, 24, 0.769)
+  );
+    margin: 15px;
+    border-radius: 10px 15px;
+ }
+ section.cursos div.card img{
+    width: 370px;
+    height: 310px;
+
+ }
+ section.cursos div.card div.precos h3{
+    color:white;
+font-weight: 500;
+padding-left: 30px;
+margin: 9px 0px;
+font-size: 20px;
+ }
+ section.cursos div.card div.precos p{
+    color:rgb(198, 201, 189);
+font-weight: 500;
+font-size: 16px;
+padding-left: 30px;
+margin-bottom: 19px;
+ }
+
+ section.cursos div.card div.contactar a{
+    margin-left: 10px;
+    padding: 8px 17px;
+    color:rgb(198, 201, 189);
+   background: rgb(20, 19, 24);
+    border-radius: 4px;
+    transition: all 1s;
+ }
+
+ 
+ section.cursos div.card div.contactar a.conta:hover{
+color: rgb(225, 125, 24);
+
+ }
+
+ /* imagem dos descontos */
+
+ section.descontos{
+width: 100%;
+height: 460px;
+background-image:url(../imagens_descontos/sssd.jpg);
+background-position:center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-attachment: fixed;
+ }
+
+
+
+
+
+
+
+ section.descontos h1{
+    color: white;
+margin-top:-20px;
+font-size: 27px;
+font-weight: 500;
+margin-bottom: 35px;
+ }
+ section.descontos h2{
+    color: white;
+font-size: 47px;
+font-family: cursive;
+font-weight: 600;
+margin-bottom: 30px;
+ }
+
+ section.descontos a.call{
+    color: rgb(242, 242, 245);
+    background: rgb(20, 19, 24);
+    padding: 10px 39px;
+    border-radius: 4px;
+    transition: ease-out 1s;
+animation: anima 1s infinite;
+
+ }
+
+ section.descontos a.call:hover{
+    background-color:
+     white;
+    color: rgba(5, 5, 5, 0.916);
+color: rgb(225, 125, 24);
+}
+
+
+
+
+ @keyframes anima{
+    0%,100%{
+        transform: scale(1);
+      
+    }
+    
+    25%{
+        transform: scale(1.1);
+    
+    }
+    
+    50%{
+        transform: scale(0.90);
+        
+    }
+    75%{
+        transform: scale(1.0.5);
+        
+    }
+    
+    
+    }
+
+
+
+    section.acess{
+        width: 100%;
+        height: 450px;
+        background: rgb(20, 19, 24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.acess div.cartao{
+        width: 280px;
+        height: 410px;
+        background: linear-gradient(135deg,rgba(79, 75, 75, 0.584),rgba(20, 19, 24, 0.769));
+        margin: 20px;
+        border-radius: 10px 15px;
+    }
+
+    section.acess div.cartao h2{
+       color: white;
+       font-size: 20px;
+       font-weight: 500px;
+       text-align: center;
+       margin-bottom: 10px;
+       margin-top: 10px;
+    }
+    section.acess div.cartao p.preco{
+      color:rgb(198, 201, 189);
+       font-size: 18px;
+       font-weight: 500px;
+      text-align: center;
+       margin-bottom: 27px;
+    }
+    section.acess div.cartao a.res{
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+       padding: 10px 69px;
+       border-radius: 4px;
+       font-size: 18px;
+       font-weight: 500px;
+       margin-left:30px;
+       margin-bottom: 10px;
+       transition: all 1s;
+    }
+    section.acess div.cartao a.res:hover{
+        color: rgb(225, 125, 24);
+    }
+
+
+    section.acess div.cartao  img{
+        width: 280px;
+        height: 220px;
+       
+    }
+/* 
+
+aqui estou estilizando outro documento que é o dc dos servicos */
+
+
+section.servicos{
+    width: 100%;
+    height: 600px;
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tratamento da responsividade com media */
+
+@media(max-width:570px){
+
+
+    div.btn {
+        display: block;
+        }
+        div.menu{
+            background: rgb(20, 19, 24);
+            height: 600vh;
+            width: 390px;
+            position: absolute;
+            top: 70px;
+            left: -900px;
+        }
+
+        div.menu.show{
+            left:0px;
+            transition:all 1s;
+
+        }
+
+        section.tudo div.menu {
+            display: flex;
+            flex-direction:column;
+           align-items: center;
+            padding: 70px 0px;
+            }
+
+            section.tudo div.menu ul li{
+                margin: 15px 0px;
+            }
+
+
+            section.meio div.conteudo{
+                width: 90%;
+                height: 390px;
+              margin-top: -50px;
+              margin-left: 10px;
+              /* padding: 30px; */
+
+            }
+            section.meio div.conteudo h1{
+                margin-left: 25px;
+                font-size: 1.75rem;
+
+            }
+            section.meio div.conteudo h2{
+                margin-left: 25px;
+                font-size: 1.2rem;
+            }
+            section.meio div.conteudo h3{
+                margin-left: 25px;
+                font-size: 1.25rem;
+
+
+
+        }
+
+            /* div veja o que temos para si */
+
+            div.des{
+                margin-left: 65px;
+            }
+
+
+            div.des a.curse{
+            margin-left: -40px;
+            font-size: 1rem;
+            }
+
+            section.des h2{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                }
+
+                section.des div{
+                  padding-bottom: 30px;
+                  width: 90%;
+                  margin-left: 30px;
+                }
+
+            section.des p{
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                }
+
+
+
+/* botao do conteudo */
+                div.ver_curso{
+                    margin-left:10px;
+                }
+
+                div.ver_curso a.curse{
+                    padding: 10px 17px;
+                    border-radius: 4px;
+
+                }
+                /* estilizando a cena dos cursos  */
+                div.destaques div.cm{
+                    width: 250px;
+                    height: 40px;
+
+
+                 }
+
+
+
+                 div.novo_produto div.df  h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: white;
+                
+                    
+                 }
+
+/* seccao dos cards de cursos */
+section.cursos{
+    height:auto;
+    background: rgb(20, 19, 24);
+ }
+
+/* section.cursos div.card{
+    width: 370px;
+    height: 350px;
+margin: 10px;
+
+ } */
+
+
+
+seccao daqueles cards de segurança */
+
+section.encomenda{
+    height:auto;
+
+}
+
+
+
+section.cursos div.card div.contactar a{
+    margin-left: 16px;
+    padding: 8px 17px;
+    color:rgb(198, 201, 189);
+   background: rgb(20, 19, 24);
+    border-radius: 4px;
+    transition: all 1s;
+ }
+
+ section.acess{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+}
+
+
+@media(max-width:577px){
+
+    div.ver_curso{
+        margin-left: -1px;
+    }
+
+    div.ver_curso a.curse{
+        padding: 10px 17px;
+        border-radius: 4px;
+
+
+    }
+
+    section.encomenda{
+        height:auto;
+
+    }
+
+    section.encomenda div.carrinho{
+        width: 260px;
+        height: 144px;
+
+       }
+
+
+       section.cursos div.card div.contactar a{
+        margin-left: 10px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+
+     section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+
+     section.cursos div.card div.contactar a{
+        margin-left: 19px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+     div.novo_produto div.df  h1{
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    
+        
+     }
+     section.acess{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+@media(max-width:600px){
+    div.conteudo{
+       padding: 30px;
+      }
+      section.cursos{
+        height:auto;
+        background: rgb(20, 19, 24);
+     }
+
+     section.encomenda{
+        height:auto;
+
+    }
+
+    section.encomenda div.carrinho{
+        width: 260px;
+        height: 144px;
+       }
+
+       section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+     section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+
+     section.cursos div.card div.contactar a{
+        margin-left: 19px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+      div.novo_produto div.df  h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+    
+ }
+
+
+ section.acess{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+    }
+
+
+
+    @media(max-width:280px){
+        div.conteudo h2,h1,h3{
+        font-size: 20px;
+    }
+
+    div.ver_curso a.curse{
+        font-size: 15p;
+        border-radius: 4px;
+
+    }
+
+    section.cursos{
+        height:auto;
+        background: rgb(20, 19, 24);
+     }
+     section.encomenda{
+        height:auto;
+
+    }
+
+    section.encomenda div.carrinho{
+        width: 260px;
+        height: 144px;
+
+       }
+
+       section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+     section.cursos div.card div.contactar a{
+        margin-left: 19px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+     section.acess{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    }
+
+
+
+
+
+
+/* @media(max-width:390px){
+    section.des div{
+        padding-bottom: 30px;
+        width: 90%;
+        margin-left: 10px;
+      }
+  section.des p{
+    margin-left: -10px;
+      }
+
+      section.des h2{
+      margin-left: -3px;
+        }
+} */
+
+
+
+
+
+
+
+@media(max-width:320px){
+
+
+    section.meio div.conteudo h1{
+        font-size: 1.25rem;
+    }
+
+    section.meio div.conteudo h2{
+        font-size: 1.13rem;
+    }
+    section.meio div.conteudo h3{
+        font-size: 1.10rem;
+
+    }
+    section.meio div.conteudo h4{
+        font-size: 1.10rem;
+
+    }
+
+    /* estes  são os botões e a sua div */
+
+    div.ver_curso{
+        margin-left: 65px;
+    }
+
+    div.ver_curso a.curse{
+    margin-left: -40px;
+    font-size: 1rem;
+    border-radius: 4px;
+    }
+
+    section.des h2{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        }
+
+        section.des div{
+          padding-bottom: 30px;
+          width: 90%;
+          margin-left: 30px;
+        }
+
+    section.des p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        }
+
+        section.cursos{
+            height:auto;
+            background: rgb(20, 19, 24);
+         }
+
+         section.encomenda{
+            height:auto;
+
+        }
+
+        section.encomenda div.carrinho{
+            width: 260px;
+            height: 144px;
+
+           }
+
+
+           section.descontos h1{
+            color: white;
+     text-align: center;
+         }
+         section.descontos h2{
+        color: white;
+        font-size: 69px;
+         }
+    
+    
+
+         section.cursos div.card div.contactar a{
+            margin-left: 19px;
+            padding: 8px 17px;
+            color:rgb(198, 201, 189);
+           background: rgb(20, 19, 24);
+            border-radius: 4px;
+            transition: all 1s;
+         }
+
+         section.acess{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+}
+
+
+
+
+
+@media(max-width:768px){
+
+    section.meio div.conteudo{
+        width: 90%;
+        height: 390px;
+      margin-top: -50px;
+      margin-left: 10px;
+    }
+    section.meio div.conteudo h1{
+        margin-left: 10px;
+        font-size: 24px;
+
+
+    }
+    section.meio div.conteudo h2{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    section.meio div.conteudo h3{
+        margin-left: 10px;
+        font-size: 18px;
+
+    }
+
+    /* estes  são os botões e a sua div */
+
+    div.ver_curso{
+        margin-left: 65px;
+    }
+    div.ver_curso a.curse{
+    margin-left: -50px;
+    border-radius: 4px;
+    }
+    section.cursos{
+        height:auto;
+        background: rgb(20, 19, 24);
+     }
+
+     section.encomenda{
+        height:auto;
+
+    }
+    section.descontos h1{
+    font-size: 22px;
+
+     }
+
+     section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+     section.cursos div.card div.contactar a{
+        margin-left: 19px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+
+     section.acess{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media(max-width:480px){
+
+    /* section.meio div.conteudo{
+
+    } */
+    section.meio div.conteudo h1{
+        font-size: 24px;
+
+    }
+    section.meio div.conteudo{
+        padding: 0 16px;
+        margin-top: -25px;
+        height: 460px;
+
+    }
+
+    section.meio div.conteudo h2{
+         font-size: 20px;
+    }
+    section.meio div.conteudo h3{
+          font-size: 18px;
+
+    }
+    section.meio div.conteudo h3{
+          font-size: 18px;
+
+
+    }
+
+    section.meio div.conteudo h1,h2,h3{
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    /* este é o botao ver curso */
+
+    div.ver_curso a.curse{
+        padding: 10px 12px;
+        border-radius: 4px;
+    }
+
+/* este é a div de baixo que tem a discricao veja os nossos cursos */
+
+section.des h2{
+    font-size: 1.0rem;
+
+    }
+
+    section.des div{
+      padding-bottom: 30px;
+      width: 90%;
+      margin-left: 30px;
+
+    }
+    section.des {
+        height: 250px;
+    }
+
+section.des p{
+    font-size: 1.0rem;
+    }
+
+    section.cursos{
+        height:auto;
+        background: rgb(20, 19, 24);
+     }
+
+
+     section.encomenda{
+        height:auto;
+
+    }
+
+
+    section.descontos h1{
+        color: white;
+ text-align: center;
+     }
+     section.descontos h2{
+    color: white;
+    font-size: 69px;
+     }
+
+
+     section.cursos div.card div.contactar a{
+        margin-left: 19px;
+        padding: 8px 17px;
+        color:rgb(198, 201, 189);
+       background: rgb(20, 19, 24);
+        border-radius: 4px;
+        transition: all 1s;
+     }
+     section.cursos div.card div.contactar{
+   margin-left: 20px;
+     }
+
+     section.acess{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
